@@ -3,17 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Софія">
     <title>Products | NeoPharm</title>
+    <style>
+        a { color: purple; }
+    </style> 
 </head>
-<body>
+<body style="background-color: rgb(174, 214, 122);">
     <h1>Our products:</h1>
-    <ul>
+    <ul type="square">
         <li>Cold medicine</li>
+        <a href="https://images.ctfassets.net/1wwtzdkddony/1wKy4MwW5bTndwIF9TR3sP/22ebee8a01a4b83fb000fdf0f633f372/TYL_300450270269_ColdAndFluSevere_24ct_00000.webp">photo</a>
         <li>Vitamins</li>
+        <a href="https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/bp-wellness-centrum/en_IE/sliced-images/global/products/new/centrum-multigummies-adults.png?auto=format">photo</a>
         <li>Antibiotics</li>
+        <a href="https://foxpharma.co.uk/wp-content/uploads/2022/04/Amoxicillin-500mg.jpg">photo</a>
     </ul>
-    <h3>made by Tymofii Stepanchuk</h3>
+
+    <h2>Our Products</h2>
+
+    <table border="2" width="80%" align="center">
+        <tr bgcolor="#4CAF50">
+            <th><font color="white">Medicine</font></th>
+            <th><font color="white">Vitamins</font></th>
+            <th><font color="white">Antibiotics</font></th>
+            <th><font color="white">Painkillers</font></th>
+        </tr>
+
+        <tr>
+            <td align="center"><img src="table1.jpg" width="100"></td>
+            <td align="center"><img src="table2.jpg" width="100"></td>
+            <td align="center"><img src="table3.jpg" width="100"></td>
+            <td align="center"><img src="table4.jpg" width="100"></td>
+        </tr>
+
+        <tr>
+            <td align="center"><a href="https://media.istockphoto.com/id/932555698/photo/hydrocodone-is-an-analgesic-prescribed-as-potent-pain-medication.jpg?s=612x612&w=0&k=20&c=xPeCb1mihCJ5blO8PkRfa4hoN6K9hv1-CXOtSUZvmBA=">More about Medicine</a></td>
+            <td align="center"><a href="https://media.istockphoto.com/id/932555698/photo/hydrocodone-is-an-analgesic-prescribed-as-potent-pain-medication.jpg?s=612x612&w=0&k=20&c=xPeCb1mihCJ5blO8PkRfa4hoN6K9hv1-CXOtSUZvmBA=">More about Vitamins</a></td>
+            <td align="center"><a href="https://media.istockphoto.com/id/932555698/photo/hydrocodone-is-an-analgesic-prescribed-as-potent-pain-medication.jpg?s=612x612&w=0&k=20&c=xPeCb1mihCJ5blO8PkRfa4hoN6K9hv1-CXOtSUZvmBA=">More about Antibiotics</a></td>
+            <td align="center"><a href="https://media.istockphoto.com/id/932555698/photo/hydrocodone-is-an-analgesic-prescribed-as-potent-pain-medication.jpg?s=612x612&w=0&k=20&c=xPeCb1mihCJ5blO8PkRfa4hoN6K9hv1-CXOtSUZvmBA=">More about Painkillers</a></td>
+        </tr>
+
+        <tr>
+            <td align="center">Used to treat various illnesses and conditions.</td>
+            <td align="center">Essential for maintaining a healthy body.</td>
+            <td align="center">Help fight bacterial infections.</td>
+            <td align="center">Relieve pain and inflammation.</td>
+        </tr>
+    </table>
+
+    <h2>Complex Product Table</h2>
+
+    <table border="2" width="80%" cellspacing="10" cellpadding="8" align="center">
+        <colgroup>
+            <col span="1" bgcolor="yellow"> 
+            <col span="2" bgcolor="green">  
+            <col span="1" bgcolor="blue">  
+        </colgroup>
+
+        <tr bgcolor="#4CAF50">
+            <th colspan="4"><font color="white">Product List</font></th>
+        </tr>
+
+        <tr>
+            <th>Category</th>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Stock</th>
+        </tr>
+
+        <tr align="center">
+            <td rowspan="2">Medicine</td>
+            <td>Aspirin</td>
+            <td>$5</td>
+            <td>Available</td>
+        </tr>
+
+        <tr align="center">
+            <td>Ibuprofen</td>
+            <td>$8</td>
+            <td>Out of Stock</td>
+        </tr>
+
+        <tr align="left">
+            <td colspan="2">Vitamins & Supplements</td>
+            <td>$10 - $50</td>
+            <td>Limited</td>
+        </tr>
+
+        <tr align="right">
+            <td>Antibiotics</td>
+            <td>Amoxicillin</td>
+            <td>$15</td>
+            <td>Available</td>
+        </tr>
+
+        <tr align="center">
+            <td>Painkillers</td>
+            <td>Paracetamol</td>
+            <td>$7</td>
+            <td>In Stock</td>
+        </tr>
+
+    </table>
+
     <a href="index.html">To the main page</a>
+
+    <p id="warning">WARNING! Be sure to consult your doctor or pharmacist before using any medication. Self-medication can be dangerous for your health.</p>
+
+    <footer>
+        <p align="center">Made by Tymofii Stepanchuk IC-33</p>
+    </footer>
 </body>
 </html>

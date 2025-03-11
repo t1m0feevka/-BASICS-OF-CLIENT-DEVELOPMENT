@@ -1,0 +1,110 @@
+/* Стилі для тіла сторінки */
+body {
+    background-color: rgb(174, 214, 122);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Стилі для заголовків */
+h1, h2, h3, h4, h5, h6 {
+    color: darkgreen;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Стилі для посилань */
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    color: darkred !important;
+    font-weight: bold;
+}
+
+/* Клас для основного тексту */
+.main-text {
+    font-family: "Times New Roman", serif;
+    font-size: 18px;
+    color: green;
+    font-style: italic;
+}
+
+/* Стилі для футера */
+footer {
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+}
+
+/* Стилі для зображень */
+#photo11 {
+    border: 3px solid darkgreen;
+    border-radius: 10px;
+}
+
+/* Стилі для списків */
+ul, ol {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: square;
+    color: darkblue;
+}
+
+ol {
+    list-style-type: decimal;
+    color: darkred;
+}
+
+dl {
+    font-weight: bold;
+}
+
+dt {
+    color: navy;
+}
+
+dd {
+    font-style: italic;
+    margin-left: 20px;
+}
+
+/* Стилі для таблиць */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+table, th, td {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(even) td {
+    background-color: #e6f7e6;
+}
+
+tr:hover td {
+    background-color: #c3e6cb;
+}

@@ -29,7 +29,7 @@ a:hover {
 /* Клас для основного тексту */
 .main-text {
     font-family: "Times New Roman", serif;
-    font-size: 18px;
+    font-size: 21px;
     color: green;
     font-style: italic;
 }
@@ -41,9 +41,33 @@ footer {
     color: gray;
 }
 
+/* Контекстний селектор: абзаци всередині футера */
+footer p {
+    font-style: italic;
+    color: darkgray;
+}
+
+/* Сусідній селектор: абзац одразу після h2 */
+h2 + p {
+    color: darkorange;
+    font-weight: bold;
+}
+
+/* Дочірній селектор: тільки безпосередні li в ol */
+ol > li {
+    color: blue;
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
 /* Стилі для зображень */
 #photo11 {
     border: 3px solid darkgreen;
+    border-radius: 10px;
+}
+
+.photo11 {
+    border: 3px solid red;
     border-radius: 10px;
 }
 
@@ -108,3 +132,4 @@ tr:nth-child(even) td {
 tr:hover td {
     background-color: #c3e6cb;
 }
+

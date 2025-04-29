@@ -17,10 +17,39 @@
 }
     </style>
 
+    <script>
+        alert("Welcome to NeoPharm!");
+        let name = prompt("What`s your name?");
+        let agree = confirm("Do you like our website?");
+    
+        if (agree) {
+        alert("Thanks for the feedback, " + name + "!");
+        } else {
+        alert("Bye!");
+        }
+    </script>
+
+    <script src="scripts.js" defer></script> 
 </head>
 <body style="background-color: rgb(174, 214, 122);">
     <h1>NeoPharm Store</h1>
-    <p style="color: red; font-size: 20px; text-align: center;">Important information about our pharmacy!</p>
+    <p id="importantInfo" style="color: red; font-size: 20px; text-align: center;">Important information about our <strong>pharmacy</strong>!</p>
+
+    <p class="edText">Editable text1</p>
+    <p class="edText">Editable text2</p> 
+
+    <p id="expText">Experimental<strong> text</strong></p> 
+
+    <div id="container">
+        <p>Start</p>
+    </div>
+    
+    <p id="repl">Replacement text</p>
+
+    <p class="text">1</p>
+    <p class="text">2</p>
+    <p class="text">3</p>
+
     <img src="photo1.jpeg" class="photo11" id="photo11" width="200px" height="100px">
     <img src="photo1.jpeg" width="100px" height="50px">
     <img src="photo1.jpeg" width="400px" height="200px">
@@ -43,6 +72,13 @@
     <p><a href="#section1">Jump to the second section</a></p>
 
     <p id="section1"><font face="Times New Roman" size="2" color="green"><i>This is the second section of the main page. Here we share more details about our services.</i></font></p>
+
+    <button onclick="dialogWithUser()">Start a dialog</button>
+    <button onclick="showDeveloperInfo('Stepanchuk', 'Tymofii')">Show developer information</button>
+    <button onclick="compareStrings()">Compare lines</button>
+    <button onclick="changeBackground()">Change background for 30sec.</button>
+    <button onclick="redirect()">Redirect to another page</button>
+    <button onclick="domManipulation()">Manipulation with DOM</button>
 
     <footer>
         <p align="center">Made by Tymofii Stepanchuk IC-33</p>

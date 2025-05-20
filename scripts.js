@@ -84,3 +84,88 @@ function dialogWithUser() {
         texts[1].remove();
       }
   } 
+
+//1
+function handleClickAttr() {
+  alert("Medicines that care about you are NeoPharm!");
+}
+
+document.getElementById("propertyBtn").onclick = function() {
+  alert("NeoPharm has been your reliable partner in the medical field for over 10 years!");
+};
+
+//2
+function showAlert() {
+  alert("Це вигляд нашого магазину");
+}
+
+function showImage() {
+  const container = document.getElementById("storePhoto");
+
+  if (container.innerHTML === "") {
+    const img = document.createElement("img");
+    img.src = "store.jpg"; 
+    img.style.width = "400px"; 
+    img.style.border = "2px solid #555";
+    container.appendChild(img);
+  }
+}
+
+//3
+const button1 = document.getElementById("storeBtn");
+button1.addEventListener("click", showAlert);
+button1.addEventListener("click", showImage);
+
+const pharmaHandler = {
+  handleEvent(event) {
+    const log = document.getElementById("pharmaLog");
+
+    log.innerText = `the element on which the handler was triggered - ${event.currentTarget.tagName}  
+    We offer certified drugs of European quality!`;
+
+    event.currentTarget.removeEventListener("click", this);
+  }
+};
+
+const button2 = document.getElementById("pharmacyBtn");
+button2.addEventListener("click", pharmaHandler);
+
+//4
+document.addEventListener("DOMContentLoaded", function () {
+  const dl = document.querySelector("dl");
+
+  dl.onclick = function (event) {
+    if (event.target.tagName === "DT") {
+      dl.querySelectorAll("dt").forEach((el) => el.classList.remove("highlighted"));
+
+      event.target.classList.add("highlighted");
+    }
+  };
+});
+
+//5
+document.addEventListener("DOMContentLoaded", () => {
+  const awardsMenu = document.getElementById("awardsMenu");
+  const awardPhoto = document.getElementById("awardPhoto");
+
+  const awardImages = {
+    innovation: "1.jpg",
+    quality: "2.jpg",
+    customerCare: "3.jpg",
+    ecoFriendly: "4.jpeg"
+  };
+
+  awardsMenu.addEventListener("click", (event) => {
+    const btn = event.target.closest("button");
+    if (!btn) return;
+
+    const awardKey = btn.dataset.award;
+    const imgSrc = awardImages[awardKey];
+
+    if (imgSrc) {
+      awardPhoto.innerHTML = `<img src="${imgSrc}" alt="${btn.textContent.trim()} award" />`;
+    } else {
+      awardPhoto.innerHTML = "";
+    }
+  });
+});
